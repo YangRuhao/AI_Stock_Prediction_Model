@@ -21,26 +21,31 @@ An AI-based time-series forecasting project using **LSTM neural networks** to pr
    cd AI_Stock_Prediction_Model
 
 2. Create and activate a virtual environment:
-  python -m venv venv
-  venv\Scripts\activate      # Windows
+   ```bash
+   python -m venv venv
+   venv\Scripts\activate      # Windows
 
 3. Install Dependencies
-  pip install -r requirements.txt
+   ```bash
+   pip install -r requirements.txt
 
 ## How to Run
 Run the scripts step by step:
-# 1. Fetch stock data (AAPL from 2020–2025)
-python -m src.fetch_data
+1. Fetch stock data
+   ```bash
+   python -m src.fetch_data
 
-# 2. Preprocess the data
-python -m src.preprocess
+2. Preprocess the data
+   ```bash
+   python -m src.preprocess
 
-# 3. Train the LSTM model
-python -m src.train
+3. Train the LSTM model
+   ```bash
+   python -m src.train
 
-# 4. Evaluate and visualize predictions
-python -m src.evaluate
-
+4. Evaluate and visualize predictions
+   ```bash
+   python -m src.evaluate
 
 ## Note:
 Default ticker: AAPL (Apple Inc.)
